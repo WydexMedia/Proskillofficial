@@ -1,9 +1,13 @@
 import Link from "next/link";
 import "./globals.css";
+import Header from "../../components/Header";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export const metadata = {
-  title: "Proskill Education",
-  description: "Empowering your skills for the future.",
+  title: "Proskill",
+  description: "Upskill from experts",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -11,20 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="bg-white text-black dark:bg-black dark:text-white font-sans min-h-screen flex flex-col">
         {/* Header / Navigation */}
-        <header className="w-full sticky top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-md border-b border-black/10 dark:border-white/10">
-          <div className="max-w-7xl mx-auto flex justify-between items-center py-3 px-4 md:px-8">
-            <Link href="/" className="flex items-center">
-              <img src="/proskillblack.webp" alt="Proskill Logo" width={40} height={40} />
-            </Link>
-            <nav className="flex gap-2 md:gap-4 text-base font-medium">
-              <Link href="/about" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">About</Link>
-              <Link href="/courses" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">Courses</Link>
-              <Link href="/calculator" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">Calculator</Link>
-              <Link href="/testimonials" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">Testimonials</Link>
-              <Link href="/contact" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">Contact</Link>
-            </nav>
-          </div>
-        </header>
+        <Header />
         {/* Main Content */}
         <main className="flex-1 w-full flex flex-col items-center justify-start">
           {children}
@@ -34,22 +25,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
             <div>
               <img src="/proskillblack.webp" alt="Proskill Logo" width={48} height={48} className="mb-4" />
-              <h3 className="text-2xl font-bold mb-2">Proskill Education</h3>
-              <p className="text-gray-300 mb-2">Empowering your skills for the future.</p>
+              <h3 className="text-2xl font-bold mb-2">Proskill</h3>
+              <p className="text-gray-300 mb-2">Upskill from experts</p>
               <p className="text-gray-400 text-sm">&copy; {new Date().getFullYear()} Proskill Education. All rights reserved.</p>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-2">Contact</h4>
-              <p className="text-gray-300">123 Main Street, City, Country</p>
+              <p className="text-gray-300">4th floor, Empora Gemz, Thondayad, Kozhikode, Kerala 673016</p>
               <p className="text-gray-300">Email: <a href="mailto:info@proskilledu.com" className="underline">info@proskilledu.com</a></p>
               <p className="text-gray-300">Phone: +1 234 567 890</p>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-2">Follow Us</h4>
               <div className="flex gap-4 mt-2">
-                <a href="https://www.instagram.com/the.proskill/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 text-2xl"><i className="fab fa-instagram"></i></a>
-                <a href="#" className="hover:text-gray-400 text-2xl"><i className="fab fa-facebook"></i></a>
-                <a href="#" className="hover:text-gray-400 text-2xl"><i className="fab fa-twitter"></i></a>
+                <a href="https://wa.me/7034688802" target="_blank" rel="noopener noreferrer" title="WhatsApp" className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-500 text-2xl text-green-500 hover:text-gray-300 transition-colors">
+                  <FontAwesomeIcon icon={faWhatsapp} />
+                </a>
+                <a href="https://www.instagram.com/the.proskill/?hl=en" target="_blank" rel="noopener noreferrer" title="Instagram" className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-500 text-2xl text-pink-500 hover:text-gray-300 transition-colors">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+                <a href="mailto:teamproskill@gmail.com" title="Email" className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-500 text-2xl text-blue-400 hover:text-gray-300 transition-colors">
+                  <FontAwesomeIcon icon={faEnvelope} />
+                </a>
               </div>
             </div>
           </div>
