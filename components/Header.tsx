@@ -26,7 +26,6 @@ export default function Header() {
         {/* Desktop nav */}
         <nav className="hidden md:flex gap-2 md:gap-4 text-base font-medium">
           <Link href="/about" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white">About</Link>
-          <Link href="/courses" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white">Courses</Link>
           <Link href="/calculator" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white">Calculator</Link>
           <Link href="/testimonials" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white">Testimonials</Link>
           <Link href="/contact" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white">Contact</Link>
@@ -36,7 +35,6 @@ export default function Header() {
       {menuOpen && (
         <nav className="md:hidden flex flex-col gap-2 px-4 pb-4 bg-white border-t border-black/10 animate-fade-in-down">
           <Link href="/about" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white" onClick={() => setMenuOpen(false)}>About</Link>
-          <Link href="/courses" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white" onClick={() => setMenuOpen(false)}>Courses</Link>
           <Link href="/calculator" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white" onClick={() => setMenuOpen(false)}>Calculator</Link>
           <Link href="/testimonials" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white" onClick={() => setMenuOpen(false)}>Testimonials</Link>
           <Link href="/contact" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white" onClick={() => setMenuOpen(false)}>Contact</Link>
