@@ -21,7 +21,7 @@ body {
 a, button {
   color: var(--foreground);
   background: var(--background);
-  border: 1px solid var(--foreground);
+  /* border: 1px solid var(--foreground); */
   transition: background 0.2s, color 0.2s;
 }
 

@@ -175,16 +175,14 @@ export default function Home() {
             title="Instagram Feed"
           ></iframe>
         </div>
-        <p className="mt-4 text-sm sm:text-base text-black dark:text-white">
-          See our latest updates and stories on{' '}
-          <a 
-            href="https://www.instagram.com/the.proskill/?hl=en" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="underline font-semibold hover:text-gray-600 dark:hover:text-gray-400 transition-colors"
+        <p className="mt-4 text-base text-white">See our latest updates and stories on 
+          <button
+            onClick={() => window.open('https://www.instagram.com/the.proskill/?hl=en', '_blank', 'noopener,noreferrer')}
+            className="inline-block ml-1 px-4 py-1 rounded-full border border-white bg-white text-black font-semibold hover:bg-black hover:text-white transition-colors duration-200"
+            type="button"
           >
             Instagram
-          </a>
+          </button>
         </p>
       </section>
 
