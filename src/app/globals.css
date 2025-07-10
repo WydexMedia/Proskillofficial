@@ -30,6 +30,12 @@ a:hover, button:hover {
   color: var(--background);
 }
 
+/* Remove background and border for logo link in navbar */
+.logo-link {
+  background: transparent !important;
+  border: none !important;
+}
+
 section {
   margin-bottom: 3rem;
 }

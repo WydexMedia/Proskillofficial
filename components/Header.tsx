@@ -7,8 +7,8 @@ export default function Header() {
   return (
     <header className="w-full sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md border-b border-black/10">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-3 px-4 md:px-8">
-        <Link href="/" className="flex items-center group relative">
-          <div className="w-28 h-12 rounded-full overflow-hidden relative">
+        <Link href="/" className="flex items-center group relative logo-link">
+          <div className="w-28 h-12 rounded-full overflow-hidden relative transition-colors duration-200 bg-transparent group-hover:bg-black">
             <img src="/proskillblack.webp" alt="Proskill Logo" width={112} height={48} className="transition-opacity duration-200 group-hover:opacity-0 absolute left-0 top-0 w-full h-full object-contain" />
             <img src="/PROSKILL.png" alt="Proskill Logo White" width={112} height={48} className="transition-opacity duration-200 opacity-0 group-hover:opacity-100 relative w-full h-full object-contain" />
           </div>
