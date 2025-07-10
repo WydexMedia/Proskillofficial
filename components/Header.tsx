@@ -26,7 +26,7 @@ export default function Header() {
         {/* Desktop nav */}
         <nav className="hidden md:flex gap-2 md:gap-4 text-base font-medium">
           <Link href="/about" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white">About</Link>
-          <Link href="/calculator" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white">Calculator</Link>
+          <Link href="/calculator" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white">Resin Calculator</Link>
           <Link href="/testimonials" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white">Testimonials</Link>
           <Link href="/contact" className="px-4 py-2 rounded-full transition bg-transparent hover:bg-black hover:text-white">Contact</Link>
         </nav>
