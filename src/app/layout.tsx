@@ -21,33 +21,62 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         {/* Footer */}
-        <footer className="w-full bg-black text-white py-10 px-6 mt-0">
-          <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
-            <div>
-              <img src="/proskillblack.webp" alt="Proskill Logo" width={48} height={48} className="mb-4" />
-              <h3 className="text-2xl font-bold mb-2">Proskill</h3>
-              <p className="text-gray-300 mb-2">Upskill from experts</p>
-              <p className="text-gray-400 text-sm">&copy; {new Date().getFullYear()} Proskill Education. All rights reserved.</p>
+        <footer className="bg-black text-white py-12" style={{ zIndex: 10, marginTop: '50px' }}>
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold">Get started now!</h2>
+              <p className="text-gray-400">It takes less than a minute of your time.</p>
+              <a
+                href="https://wa.me/917034688802"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block border border-white py-2 px-6 "
+              >
+                Chat on WhatsApp →
+              </a>
             </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-2">Contact</h4>
-              <p className="text-gray-300">4th floor, Empora Gemz, Thondayad, Kozhikode, Kerala 673016</p>
-              <p className="text-gray-300">Email: <a href="mailto:info@proskilledu.com" className="underline">info@proskilledu.com</a></p>
-              <p className="text-gray-300">Phone: +1 234 567 890</p>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-2">Follow Us</h4>
-              <div className="flex gap-4 mt-2">
-                <a href="https://wa.me/7034688802" target="_blank" rel="noopener noreferrer" title="WhatsApp" className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-500 text-2xl text-green-500 hover:text-gray-300 transition-colors">
-                  <FontAwesomeIcon icon={faWhatsapp} />
-                </a>
-                <a href="https://www.instagram.com/the.proskill/?hl=en" target="_blank" rel="noopener noreferrer" title="Instagram" className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-500 text-2xl text-pink-500 hover:text-gray-300 transition-colors">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-                <a href="mailto:teamproskill@gmail.com" title="Email" className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-500 text-2xl text-blue-400 hover:text-gray-300 transition-colors">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </a>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-300 text-center md:text-left">
+              <div>
+                <h4 className="font-bold text-white mb-2">Contact</h4>
+                <ul className="space-y-1">
+                  <li>WhatsApp: 7034688802</li>
+                  <li>Email: proskilledu@gmail.com</li>
+                  <li>
+                    <a href="https://www.instagram.com/the.proskill/?hl=en" target="_blank" rel="noopener noreferrer">
+                      Instagram: @the.proskill
+                    </a>
+                  </li>
+                </ul>
               </div>
+            </div>
+
+            <div className="mt-8 flex justify-center space-x-6 text-gray-500 text-xl ">
+              <a href="https://wa.me/917034688802" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"  >
+                <FontAwesomeIcon icon={faWhatsapp} className="hover:text-white text-white" />
+              </a>
+              <a href="mailto:proskilledu@gmail.com" aria-label="Email">
+                <FontAwesomeIcon icon={faEnvelope} className="hover:text-white  text-white" />
+              </a>
+              <a href="https://www.instagram.com/the.proskill/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <FontAwesomeIcon icon={faInstagram} className="hover:text-white text-white" />
+              </a>
+            </div>
+
+            <div className="mt-4 text-center text-xs text-gray-500">
+              <p>Proskill © {new Date().getFullYear()} All rights reserved</p>
+              <p>
+                Design & Developed by{' '}
+                <a
+                  href="https://wydexmedia.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" hover:text-gray-300"
+                >
+                  Wydex
+                </a>
+              </p>
+
             </div>
           </div>
         </footer>

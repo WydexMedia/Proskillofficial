@@ -141,8 +141,7 @@ export default function Home() {
           <div className="flex-1 flex flex-col items-start text-center lg:text-left">
             <h3 className="text-xl sm:text-2xl font-bold mb-2 text-black dark:text-white">Proskill Resin</h3>
             <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              Premium quality resin for all your creative and professional needs. Trusted by experts for its clarity, strength, and versatility.
-            </p>
+             Premium quality resin for all your creative and professional needs. Trusted by experts for its clarity, strength, and versatility. Perfectly complements the best resin art course in Kerala, helping you achieve flawless results every time.            </p>
             <a
               href="https://wa.me/919999999999?text=I'm%20interested%20in%20Proskill%20Resin%20product"
               target="_blank"
@@ -157,7 +156,8 @@ export default function Home() {
 
       {/* Instagram Preview Section */}
       <section className="w-full max-w-4xl mx-auto py-12 sm:py-16 px-4 text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-black dark:text-white">Follow Us on Instagram</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-black dark:text-white">Follow us on Instagram – the best skill academy in Kerala!</h2>
+
         <div className="flex justify-center">
           <iframe
             src="https://www.instagram.com/the.proskill/embed"
@@ -188,7 +188,7 @@ export default function Home() {
 
       {/* Enhanced Swipable Testimonials Section */}
       <section className="w-full py-12 sm:py-16 px-4 text-center bg-black">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-white">What Our Learners Say</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-white">What Our Learners Say About the Best Skill Academy in Kerala</h2>
         <div className="max-w-6xl mx-auto">
           <div ref={sliderRef} className="keen-slider">
             {testimonials.map((src, idx) => (
@@ -229,8 +229,7 @@ export default function Home() {
             />
             <h3 className="text-lg sm:text-xl font-bold mb-2 text-center">International Shipping</h3>
             <p className="text-sm sm:text-base text-gray-700 text-center leading-relaxed">
-              We deliver our products and services worldwide, ensuring you can access Proskill from anywhere.
-            </p>
+              We deliver our products and services worldwide, ensuring you can access ProSkill—the best skill academy in Kerala—from anywhere.            </p>
           </div>
           <div className="flex flex-col items-center p-6 sm:p-8 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow duration-300">
             <FontAwesomeIcon 
@@ -240,7 +239,7 @@ export default function Home() {
             />
             <h3 className="text-lg sm:text-xl font-bold mb-2 text-center">Quality Assurance</h3>
             <p className="text-sm sm:text-base text-gray-700 text-center leading-relaxed">
-              Our team is committed to providing the highest quality in education and support for your success.
+              Our team is committed to providing the highest quality in education and support—making us the best skill academy in Kerala for your success
             </p>
           </div>
           <div className="flex flex-col items-center p-6 sm:p-8 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow duration-300">
@@ -251,7 +250,7 @@ export default function Home() {
             />
             <h3 className="text-lg sm:text-xl font-bold mb-2 text-center">Fast Delivery</h3>
             <p className="text-sm sm:text-base text-gray-700 text-center leading-relaxed">
-              Experience quick and reliable delivery of our services and resources, wherever you are.
+              As the best online skill academy in Kerala, we ensure quick and reliable delivery of all services and resources, no matter your location.
             </p>
           </div>
         </div>
