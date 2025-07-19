@@ -9,18 +9,22 @@ import Head from "next/head";
 
 export const metadata = {
   title: "Best skill academy in Kerala | Resin art course in Kerala",
-  description: " Best skill academy in Kerala offering top Resin art course and Mehandi course in Kerala. Learn practical skills and grow with expert-led training.",
-
+  description: "Best skill academy in Kerala offering top Resin art course and Mehandi course in Kerala. Learn practical skills and grow with expert-led training.",
+  metadataBase: new URL("https://proskilledu.com"),
+  alternates: {
+    canonical: "/",
+  },
+  verification: {
+    google: "QWHCTql45sfxfC041X4NKX-jcfFYro27GZbChgGmFoM"
+  }
 };
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="bg-white text-black dark:bg-black dark:text-white font-sans min-h-screen flex flex-col">
-      <Head>
-  <link rel="canonical" href="https://proskilledu.com" />
-  <meta name="google-site-verification" content="QWHCTql45sfxfC041X4NKX-jcfFYro27GZbChgGmFoM" />
-</Head>
+ 
         {/* Header / Navigation */}
         <Header />
         {/* Main Content */}
