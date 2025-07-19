@@ -6,8 +6,11 @@ import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export const metadata = {
-  title: "Proskill",
-  description: "Upskill from experts",
+  title: "Best skill academy in Kerala | Resin art course in Kerala",
+  description: "ProSkill – The Best Skill Academy in Kerala offering expert-led courses like Resin Art and Mehandi Art. Join the top Resin Art Course in Kerala and start your creative journey today",
+  alternates: {
+    canonical: "https://proskilledu.com",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -35,9 +38,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 Chat on WhatsApp →
               </a>
             </div>
+            <h2 className="mb-10">Best skill academy in kerala</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-300 text-center md:text-left">
               <div>
+                
                 <h4 className="font-bold text-white mb-2">Contact</h4>
                 <ul className="space-y-1">
                   <li>WhatsApp: 7034688802</li>

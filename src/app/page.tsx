@@ -65,12 +65,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="w-full flex flex-col items-center justify-center py-24 px-4 bg-black text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('/globe.svg')] bg-center bg-no-repeat bg-contain pointer-events-none" />
-        <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight drop-shadow-lg">Empower Your Future<br /><span className="text-white/70">with Proskill</span></h1>
+        <p className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight drop-shadow-lg">Empower Your Future<br /><span className="text-white/70">with Proskill</span></p>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-white/80">Unlock your potential with world-class courses, tools, and a thriving community. Learn, grow, and succeed with Proskill Education.</p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <h1 className="">Best Skill Academy in kerala</h1>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
           <button
             onClick={() => setShowCourseForm(true)}
-            className="px-8 py-3 rounded-full bg-white text-black font-bold text-lg shadow-lg hover:bg-black hover:text-white border-2 border-white hover:border-white transition-all duration-200"
+            className="px-8 py-3 rounded-full text-black font-bold bg-black text-lg shadow-lg hover:bg-black hover:text-white border-2 border-white hover:border-white transition-all duration-200"
             type="button"
           >
             Explore Courses
@@ -79,7 +80,7 @@ export default function Home() {
             href="https://wa.me/7034688802?text=Enquiry%20for%20shopping%20resin"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-3 rounded-full bg-transparent text-white font-bold text-lg border-2 border-white hover:bg-white hover:text-black transition-all duration-200"
+            className="px-8 py-3 rounded-full bg-black text-white font-bold text-lg border-2 border-white hover:bg-white hover:text-black transition-all duration-200"
           >
             Shop Now
           </a>
@@ -146,7 +147,7 @@ export default function Home() {
               href="https://wa.me/919999999999?text=I'm%20interested%20in%20Proskill%20Resin%20product"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 sm:px-8 py-3 rounded-full border border-black dark:border-white text-base sm:text-lg font-bold bg-black text-white dark:bg-white dark:text-black hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-all duration-200 active:scale-95"
+              className="inline-block px-6 sm:px-8 py-3 rounded-full border border-black dark:border-white text-base sm:text-lg font-bold  text-white dark:bg-white dark:text-black hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-all duration-200 active:scale-95"
             >
               Shop Now
             </a>
@@ -175,10 +176,12 @@ export default function Home() {
             title="Instagram Feed"
           ></iframe>
         </div>
+
+        
         <p className="mt-4 text-base text-white">See our latest updates and stories on 
           <button
             onClick={() => window.open('https://www.instagram.com/the.proskill/?hl=en', '_blank', 'noopener,noreferrer')}
-            className="inline-block ml-1 px-4 py-1 rounded-full border border-white bg-white text-black font-semibold hover:bg-black hover:text-white transition-colors duration-200"
+            className="inline-block px-6 ml-3 sm:px-8 py-3 rounded-full border border-black dark:border-white text-base sm:text-lg font-bold  text-white dark:bg-white dark:text-black hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-all duration-200 active:scale-95"
             type="button"
           >
             Instagram

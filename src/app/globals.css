@@ -24,6 +24,7 @@ a, button {
   /* border: 1px solid var(--foreground); */
   transition: background 0.2s, color 0.2s;
   color: white;
+  background-color: #000;
 }
 
 a:hover, button:hover {
