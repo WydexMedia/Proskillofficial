@@ -4,19 +4,23 @@ import Header from "../../components/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Head from "next/head";
+
 
 export const metadata = {
   title: "Best skill academy in Kerala | Resin art course in Kerala",
-  description: "ProSkill – The Best Skill Academy in Kerala offering expert-led courses like Resin Art and Mehandi Art. Join the top Resin Art Course in Kerala and start your creative journey today",
-  alternates: {
-    canonical: "https://proskilledu.com",
-  },
+  description: " Best skill academy in Kerala offering top Resin art course and Mehandi course in Kerala. Learn practical skills and grow with expert-led training.",
+
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="bg-white text-black dark:bg-black dark:text-white font-sans min-h-screen flex flex-col">
+      <Head>
+  <link rel="canonical" href="https://proskilledu.com" />
+  <meta name="google-site-verification" content="QWHCTql45sfxfC041X4NKX-jcfFYro27GZbChgGmFoM" />
+</Head>
         {/* Header / Navigation */}
         <Header />
         {/* Main Content */}
