@@ -125,7 +125,7 @@ export default function SuccessStats() {
                       frameBorder="0"
                       scrolling="yes"
                       className="w-full h-full"
-                      title="ProSkill Academy Instagram"
+                      title="ProSkill Instagram"
                       loading="lazy"
                     />
                   </div>
@@ -197,7 +197,7 @@ export default function SuccessStats() {
         <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 md:p-12 mb-20 border border-purple-100/50 shadow-xl">
           <div className="text-center mb-12">
             <h3 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-purple-900 mb-6">
-              Why Choose ProSkill Academy?
+              Why Choose ProSkill ?
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto font-medium">
               We provide everything you need to succeed in your creative journey

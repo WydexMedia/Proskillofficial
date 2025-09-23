@@ -17,17 +17,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Best skill academy in kerala | ProSkill Academy",
   description:
-    "ProSkill Academy is the best skill academy in Kerala, offering expert resin art course in Kerala and creative skill development programs with hands-on training and personalized guidance.",
-  authors: [{ name: "ProSkill Academy", url: "https://proskilledu.com" }],
+    "ProSkill is the best skill academy in Kerala, offering expert resin art course in Kerala and creative skill development programs with hands-on training and personalized guidance.",
+  authors: [{ name: "ProSkill", url: "https://proskilledu.com" }],
   generator: "Next.js",
-  applicationName: "ProSkill Academy",
+  applicationName: "ProSkill",
   referrer: "origin-when-cross-origin",
   keywords: [
     "Best skill academy in kerala",
     "Resin art course in kerala",
     "Mehendi art course kerala",
     "Skill development kerala",
-    "ProSkill Academy",
+    "ProSkill",
     "Creative courses kerala",
     "Art and craft courses",
     "Hands-on training kerala",
@@ -41,24 +41,24 @@ export const metadata: Metadata = {
     "Keychain making",
     "Frame making course",
   ],
-  creator: "ProSkill Academy",
-  publisher: "ProSkill Academy",
+  creator: "ProSkill",
+  publisher: "ProSkill",
   metadataBase: new URL("https://www.proskilledu.com"),
   alternates: {
     canonical: "https://www.proskilledu.com",
   },
   openGraph: {
-    title: "ProSkill Academy | Best Skill Academy in Kerala",
+    title: "ProSkill | Best Skill Academy in Kerala",
     description:
       "Join Kerala's leading skill academy offering expert resin art courses and creative skill development programs with hands-on training and personalized guidance.",
     url: "https://proskilledu.com",
-    siteName: "ProSkill Academy",
+    siteName: "ProSkill",
     images: [
       {
         url: "https://proskilledu.com/og-image.jpg", // Replace with real image
         width: 1200,
         height: 630,
-        alt: "ProSkill Academy - Best Skill Academy in Kerala",
+        alt: "ProSkill - Best Skill Academy in Kerala",
       },
     ],
     locale: "en_IN",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ProSkill Academy",
+    title: "ProSkill",
     description:
       "Kerala's premier skill academy specializing in resin art courses and creative skill development with expert guidance.",
     site: "@the.proskill", // Replace with your real Twitter handle

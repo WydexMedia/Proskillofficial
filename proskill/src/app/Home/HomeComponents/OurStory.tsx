@@ -86,7 +86,7 @@ const OurStory: React.FC = () => {
               <div className="relative bg-white p-4 rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
                 <Image
                   src="/images/resinclock.jpg"
-                  alt="ProSkill Academy - Best skill academy in Kerala"
+                  alt="ProSkill - Best skill academy in Kerala"
                   width={500}
                   height={600}
                   className="rounded-2xl w-full h-auto object-cover"

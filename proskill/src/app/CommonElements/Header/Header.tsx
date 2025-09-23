@@ -64,7 +64,7 @@ function Header() {
           <Link href="/" className="flex items-center space-x-2 group">
             <Image
               src="/images/logo.png"
-              alt="ProSkill Academy Logo"
+              alt="ProSkillLogo"
               width={100}
               height={100}
               className="h-8 sm:h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"

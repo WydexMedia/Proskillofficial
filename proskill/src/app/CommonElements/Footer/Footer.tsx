@@ -22,7 +22,7 @@ function FooterPage() {
               <div className="h-14 flex justify-center items-center">
                 <Image
                   src="/images/logo.png"
-                  alt="ProSkill Academy Logo"
+                  alt="ProSkill Logo"
                   width={100}
                   height={100}
                   className="h-12 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105"
