@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+/* Your original custom styles */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE and Edge */
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari, Opera */
+}
+
+.tiptap-editor {
+  min-height: 60vh;
+  height: 60vh;
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 1.25rem;
+  padding: 2.5rem 2rem;
+  background: #fff;
+  color: #111;
+  font-size: 1.15rem;
+  outline: none;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
+  transition: box-shadow 0.2s;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+.tiptap-editor:focus {
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.12);
+  border-color: #6366f1;
+}
+
+.tiptap-toolbar {
+  display: flex;
+  gap: 0.5rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+  align-items: center;
+  min-height: 40px;
+}
+.tiptap-toolbar button {
+  background: none;
+  border: none;
+  padding: 0.35rem 0.7rem;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #374151;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+.tiptap-toolbar button.active {
+  background: #6366f1;
+  color: #fff;
+  box-shadow: 0 2px 8px 0 rgba(99,102,241,0.15);
+}
+.tiptap-toolbar button:hover {
+  background: #f3f4f6;
+}
+.floating-toolbar {
+  pointer-events: auto;
+  animation: fadeIn 0.18s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* shadcn/ui minimal theme variables - only what's needed for toasts */
+@theme inline {
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-border: var(--border);
+}
+
+:root {
+    --radius: 0.5rem;
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --popover: #ffffff;
+    --popover-foreground: #0f172a;
+    --border: #e2e8f0;
+}
+
+.dark {
+    --background: #0f172a;
+    --foreground: #f8fafc;
+    --popover: #1e293b;
+    --popover-foreground: #f8fafc;
+    --border: #334155;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
