@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AppShell from "../AppShell";
 import { Palette, Sparkles, Users, ArrowRight, X, CheckCircle, Clock, Truck, Headphones } from 'lucide-react';
 import { showToast } from '@/lib/toast';

@@ -74,9 +74,11 @@ function AdminImagePreview({ imageKey }: { imageKey: string }) {
   }
 
   return (
-    <img 
+    <Image 
       src={imageUrl} 
       alt="Blog preview" 
+      width={128}
+      height={96}
       className="mx-auto h-24 w-auto object-cover rounded" 
       onError={(e) => {
         (e.target as HTMLImageElement).style.display = 'none';
@@ -121,7 +123,6 @@ export default function AdminPage() {
   const [blogImage, setBlogImage] = useState('');
   const [blogImageAlt, setBlogImageAlt] = useState('');
   const [blogContent, setBlogContent] = useState('');
-  const [blogImageFile, setBlogImageFile] = useState<File | null>(null);
   const [uploadingImage, setUploadingImage] = useState(false);
   const [blogMsg, setBlogMsg] = useState('');
   const [editBlog, setEditBlog] = useState<Blog | null>(null);
@@ -199,7 +200,6 @@ export default function AdminPage() {
       
       // Store the S3 key - we'll generate presigned URLs when needed
       setBlogImage(key);
-      setBlogImageFile(file);
       
       showToast.success('Image Uploaded!', 'Blog image uploaded successfully');
     } catch {
@@ -379,7 +379,6 @@ export default function AdminPage() {
       setBlogImage('');
         setBlogImageAlt('');
       setBlogContent('');
-        setBlogImageFile(null);
         setBlogStep(1);
       fetchBlogs();
         showToast.success('Blog Published!', 'Your blog post has been published successfully');
@@ -399,7 +398,6 @@ export default function AdminPage() {
     setBlogImage(blog.image || '');
     setBlogImageAlt(blog.imageAlt || '');
     setBlogContent(blog.content);
-    setBlogImageFile(null);
   };
 
   const handleEditBlogSubmit = async (e: React.FormEvent) => {
@@ -421,7 +419,6 @@ export default function AdminPage() {
       setBlogImage('');
         setBlogImageAlt('');
       setBlogContent('');
-        setBlogImageFile(null);
         setBlogStep(1);
       fetchBlogs();
         setBlogMsg('Blog updated successfully!');

@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { Users, Award, TrendingUp, Star, ArrowRight, CheckCircle, Heart, MessageCircle, Share, Instagram, Home, Search, Video, User } from 'lucide-react';
+import { Users, Award, TrendingUp, Star, ArrowRight, CheckCircle,Instagram, Home, Search, Video } from 'lucide-react';
 
 const successStats = [
   {
