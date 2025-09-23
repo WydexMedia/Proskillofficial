@@ -28,7 +28,7 @@ function FooterPage() {
                   className="h-12 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <p className="text-xl font-semibold text-blue-400">ProSkill Academy</p>
+              <p className="text-xl font-semibold text-blue-400">ProSkill</p>
             </div>
 
             <p className="text-gray-400 text-base leading-relaxed text-center">
@@ -129,7 +129,7 @@ function FooterPage() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-base">
-              <span className="text-blue-400 font-bold">ProSkill Academy</span> © 2025 All rights reserved
+              <span className="text-blue-400 font-bold">ProSkill</span> © 2025 All rights reserved
             </div>
             <div className="flex space-x-8 text-base">
               <a href="/privacy-policy" className="text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-1">

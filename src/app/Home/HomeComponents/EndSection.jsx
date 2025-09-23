@@ -35,7 +35,7 @@ const EndSection = () => {
             </h1>
             
             <p className="text-xl text-gray-700 leading-relaxed max-w-lg">
-              At <span className="font-semibold text-black">ProSkill Academy</span>, we are all about creating a learning environment that lets you grow stronger skills and larger creativity. Together, let's make a fruitful journey with the best skill academy in Kerala!
+              At <span className="font-semibold text-black">ProSkill</span>, we are all about creating a learning environment that lets you grow stronger skills and larger creativity. Together, let's make a fruitful journey with the best skill academy in Kerala!
             </p>
           </div>
 

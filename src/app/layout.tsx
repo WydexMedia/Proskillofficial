@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Best skill academy in kerala | ProSkill Academy",
+  title: "Best skill academy in kerala | resin art in kerala",
   description:
     "ProSkill is the best skill academy in Kerala, offering expert resin art course in Kerala and creative skill development programs with hands-on training and personalized guidance.",
   authors: [{ name: "ProSkill", url: "https://proskilledu.com" }],
