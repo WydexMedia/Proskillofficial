@@ -5,17 +5,17 @@ const testimonials = [
   {
     id: 1,
     name: 'Happy student1',
-    role: 'Resin Art Entrepreneur',
+    role: '',
     course: 'Resin Art Course',
     video: '/video/testimonial1.MP4',
     rating: 5,
-    avatar: 'PM'
+    avatar: 'NS'
   },
   {
     id: 2,
     name: 'Happy student2',
-    role: 'Professional Mehendi Artist',
-    course: 'Mehendi Art Course',
+    role: '',
+    course: 'Resin Art Course',
     video: '/video/testimonial2.MP4',
     rating: 5,
     avatar: 'AR'
@@ -23,7 +23,7 @@ const testimonials = [
   {
     id: 3,
     name: 'Happy student 3',
-    role: 'Creative Workshop Graduate',
+    role: '',
     course: 'Resin Art Course',
     video: '/video/testimonial3.MP4',
     rating: 5,
