@@ -48,7 +48,7 @@ function Services() {
           className="mt-8 text-4xl md:text-6xl font-black tracking-tight text-black leading-tight"
         >
           Master your creative skills with 
-          <span className="block text-gray-600">
+          <span className="block text-gray-500">
             structured, expert‑led courses
           </span>
         </h2>

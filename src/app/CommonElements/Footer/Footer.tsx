@@ -75,8 +75,8 @@ function FooterPage() {
             <div className="space-y-3">
               <Link href="/about" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">About</Link>
               <Link href="/#services" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Services</Link>
-              <Link href="#" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Industries</Link>
-              <Link href="#" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Works</Link>
+              {/* <Link href="#" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Industries</Link> */}
+              {/* <Link href="#" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Works</Link> */}
               <Link href="/courses" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Courses</Link>
               <Link href="/contact" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Contact</Link>
             </div>
@@ -90,8 +90,8 @@ function FooterPage() {
             <div className="space-y-3">
               <Link href="/#services" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Resin Art Course</Link>
               <Link href="/#services" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Mehendi Art Course</Link>
-              <Link href="/#services" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Creative Workshops</Link>
-              <Link href="/#services" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Skill Certification</Link>
+              {/* <Link href="/#services" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Creative Workshops</Link> */}
+              {/* <Link href="/#services" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Skill Certification</Link> */}
               <Link href="/about" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">About Academy</Link>
               <Link href="/contact" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Contact Us</Link>
             </div>

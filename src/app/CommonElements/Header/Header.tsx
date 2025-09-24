@@ -88,7 +88,7 @@ function Header() {
 
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
-            <button onClick={handleGetStarted} className="px-5 py-2 bg-white border border-blue-400/30 text-black font-medium rounded-lg hover:bg-blue-400/10 hover:border-blue-400/50 transition-all duration-300 shadow-lg shadow-blue-400/5 cursor-pointer">
+            <button onClick={handleGetStarted} className="px-5 py-2 bg-white border border-blue-400/30 text-black font-medium rounded-lg hover:bg-blue-400/10 hover:border-white hover:text-white transition-all duration-300 shadow-lg shadow-blue-400/5 cursor-pointer">
               Start Learning
             </button>
           </div>
