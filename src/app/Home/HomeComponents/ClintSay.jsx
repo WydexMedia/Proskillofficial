@@ -34,7 +34,7 @@ const testimonials = [
 function VideoTestimonials() {
   const [current, setCurrent] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false);
   const [videoError, setVideoError] = useState({});
   const [videoLoaded, setVideoLoaded] = useState({});
   const [isBuffering, setIsBuffering] = useState(false);
