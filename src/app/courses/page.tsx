@@ -12,6 +12,7 @@ type Course = {
   level?: string;
   features?: string[];
   price?: string;
+  originalPrice?: string;
   type?: string;
 };
 
@@ -36,7 +37,7 @@ export default function CoursesPage() {
         _id: '1',
         title: 'Resin Art Course',
         description: 'Join ProSkill, the best skill academy in Kerala, and unlock your creativity with our resin art course in Kerala. We offer both online and offline classes, covering exciting projects like ocean art, clock making, keychain making, and frame making. Every learner receives a resin art kit with free delivery, plus lifetime doubt-clearing support.',
-        duration: '4-6 weeks',
+        duration: '3 days',
         level: 'Beginner to Advanced',
         features: [
           'Free resin art kit with delivery',
@@ -47,13 +48,14 @@ export default function CoursesPage() {
           'Certificate upon completion'
         ],
         price: '₹3,999',
+        originalPrice: '₹5,499',
         type: 'Premium'
       },
       {
         _id: '2',
         title: 'Mehendi Art Course',
         description: 'ProSkill, the best skill academy in Kerala, offers a creative mehendi art course for learners who want to master beautiful designs. Our classes are conducted online, making it easy to learn from anywhere. We provide a free mehendi kit with delivery to your home, plus expert guidance and lifetime support.',
-        duration: '3-4 weeks',
+        duration: '3 days',
         level: 'Beginner to Intermediate',
         features: [
           'Free mehendi kit with delivery',
@@ -63,7 +65,8 @@ export default function CoursesPage() {
           'Bridal mehendi techniques',
           'Business guidance for starting your own practice'
         ],
-        price: '₹2,999',
+        price: '₹2,599',
+        originalPrice: '₹3,499',
         type: 'Standard'
       }
     ];
@@ -233,7 +236,10 @@ export default function CoursesPage() {
                             <Users className="w-5 h-5" />
                             <span className="font-semibold">{course.level}</span>
                           </div>
-                          <div className="flex items-center gap-2 text-gray-600">
+                          <div className="flex items-center gap-3 text-gray-600">
+                            {course.originalPrice && (
+                              <span className="text-lg text-gray-400 line-through font-semibold">{course.originalPrice}</span>
+                            )}
                             <span className="font-bold text-2xl text-black">{course.price}</span>
                           </div>
                         </div>
