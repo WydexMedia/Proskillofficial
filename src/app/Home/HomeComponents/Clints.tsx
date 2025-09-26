@@ -1,5 +1,6 @@
 import { useRouter } from 'next/navigation';
-import { Users, Award, TrendingUp, Star, ArrowRight, CheckCircle,Instagram, Home, Search, Video } from 'lucide-react';
+import { Users, Award, TrendingUp, Star, ArrowRight, CheckCircle,Instagram, Home, Search, Video, ChevronDown, ChevronUp } from 'lucide-react';
+import { useState } from 'react';
 
 const successStats = [
   {
@@ -21,6 +22,7 @@ const successFeatures = [
 
 export default function SuccessStats() {
   const router = useRouter();
+  const [showAllFeatures, setShowAllFeatures] = useState(false);
 
   return (
     <section className="bg-gradient-to-br from-gray-50 via-white to-purple-50 py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
@@ -205,17 +207,55 @@ export default function SuccessStats() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {successFeatures.map((feature, index) => (
-              <div
-                key={index}
-                className="group flex items-center gap-4 p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-purple-100/30 hover:border-purple-300/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <CheckCircle className="w-6 h-6 text-white" />
+            {/* Desktop: Show all features */}
+            <div className="hidden md:contents">
+              {successFeatures.map((feature, index) => (
+                <div
+                  key={index}
+                  className="group flex items-center gap-4 p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-purple-100/30 hover:border-purple-300/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                >
+                  <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <CheckCircle className="w-6 h-6 text-white" />
+                  </div>
+                  <span className="text-gray-800 font-semibold text-lg group-hover:text-purple-700 transition-colors duration-300">{feature}</span>
                 </div>
-                <span className="text-gray-800 font-semibold text-lg group-hover:text-purple-700 transition-colors duration-300">{feature}</span>
-              </div>
-            ))}
+              ))}
+            </div>
+            
+            {/* Mobile: Show limited features with toggle */}
+            <div className="md:hidden contents">
+              {(showAllFeatures ? successFeatures : successFeatures.slice(0, 3)).map((feature, index) => (
+                <div
+                  key={index}
+                  className="group flex items-center gap-4 p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-purple-100/30 hover:border-purple-300/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                >
+                  <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <CheckCircle className="w-6 h-6 text-white" />
+                  </div>
+                  <span className="text-gray-800 font-semibold text-lg group-hover:text-purple-700 transition-colors duration-300">{feature}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          {/* See More/Less Button - Only show on mobile */}
+          <div className="md:hidden mt-8 text-center">
+            <button
+              onClick={() => setShowAllFeatures(!showAllFeatures)}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-2xl hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              {showAllFeatures ? (
+                <>
+                  <span>See Less</span>
+                  <ChevronUp className="w-5 h-5" />
+                </>
+              ) : (
+                <>
+                  <span>See More</span>
+                  <ChevronDown className="w-5 h-5" />
+                </>
+              )}
+            </button>
           </div>
         </div>
 
