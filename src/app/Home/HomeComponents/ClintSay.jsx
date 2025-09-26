@@ -182,7 +182,7 @@ function VideoTestimonials() {
           onTouchEnd={onTouchEnd}
         >
           {/* Video Player */}
-          <div className="relative aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl border border-gray-700/50 transform transition-all duration-700 hover:scale-[1.02] hover:shadow-purple-500/20 hover:border-purple-500/30">
+          <div className="relative aspect-[9/16] max-w-sm mx-auto bg-black rounded-3xl overflow-hidden shadow-2xl border border-gray-700/50 transform transition-all duration-700 hover:scale-[1.02] hover:shadow-purple-500/20 hover:border-purple-500/30">
             {!videoError[current] ? (
               <>
                 <video
