@@ -13,7 +13,9 @@ function Home() {
     <div className="min-h-screen  bg-black text-white">
       <HomeVideo />
       <div className=" w-full relative z-10 bg-white">
-        <Discription/>
+        <div className="hidden md:block">
+          <Discription/>
+        </div>
         <OurStory/>
         <Services />
         <Clinds/>

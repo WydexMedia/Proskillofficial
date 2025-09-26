@@ -161,7 +161,7 @@ export default function SuccessStats() {
                   <Award className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-gray-800">500+</div>
+                  <div className="text-2xl font-bold text-gray-800">10000+</div>
                   <div className="text-sm text-gray-600">Certified Students</div>
                 </div>
               </div>

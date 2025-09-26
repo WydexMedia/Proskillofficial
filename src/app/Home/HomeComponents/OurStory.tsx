@@ -43,9 +43,6 @@ const OurStory: React.FC = () => {
               <p className="text-xl text-gray-300 leading-relaxed">
                 ProSkill began with a vision to make learning skills simple and practical. Today, we are the <span className="font-bold text-white">Best skill academy in Kerala</span>, offering creative programs like the resin art course in Kerala and mehendi art course with free kits and lifetime support.
               </p>
-              <p className="text-lg text-gray-400 leading-relaxed">
-                Our journey is driven by passion for creativity and hands-on learning. We offer both online and offline classes, covering exciting projects like ocean art, clock making, keychain making, and frame making. We continue to inspire students to turn their talents into real opportunities.
-              </p>
             </div>
 
             {/* Stats */}
@@ -87,7 +84,7 @@ const OurStory: React.FC = () => {
                 <Image
                   src="/images/resinclock.jpg"
                   alt="ProSkill - Best skill academy in Kerala"
-                  width={500}
+                  width={400}
                   height={600}
                   className="rounded-2xl w-full h-auto object-cover"
                   priority

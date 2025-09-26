@@ -32,7 +32,7 @@ function FooterPage() {
             </div>
 
             <p className="text-gray-400 text-base leading-relaxed text-center">
-              As the best skill academy in Kerala, we drive growth through creative skill development and hands-on training programs tailored for your success.
+              Best skill academy in Kerala
             </p>
 
             <div className="flex justify-center space-x-6 pt-4">
@@ -104,9 +104,8 @@ function FooterPage() {
             </h3>
             <div className="space-y-5">
               {[
-                { label: 'General', icon: <Phone />, value: '+91 7034688802', href: 'tel:+917034688802' },
+                { label: 'Phone', icon: <Phone />, value: '+91 7034688802', href: 'tel:+917034688802' },
                 { label: 'Email', icon: <Mail />, value: 'proskilledu@gmail.com', href: 'mailto:proskilledu@gmail.com' },
-                { label: 'WhatsApp', icon: <MessageCircle />, value: '+91 7034688802', href: 'https://wa.me/7034688802' },
                 { label: 'Instagram', icon: <Instagram />, value: '@the.proskill', href: 'https://www.instagram.com/the.proskill' }
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-4 group">

@@ -1,5 +1,5 @@
-import React from "react";
-import { Palette, Brush, CheckCircle, Award, Users, Star, Truck, Headphones } from "lucide-react";
+import React, { useState } from "react";
+import { Palette, Brush, CheckCircle, Award, Users, Star, Truck, Headphones, ChevronDown, ChevronUp } from "lucide-react";
 
 const courses = [
   {
@@ -31,6 +31,16 @@ const courses = [
 ];
 
 function Services() {
+  const [expandedCourses, setExpandedCourses] = useState<number[]>([]);
+
+  const toggleCourse = (courseId: number) => {
+    setExpandedCourses(prev => 
+      prev.includes(courseId) 
+        ? prev.filter(id => id !== courseId)
+        : [...prev, courseId]
+    );
+  };
+
   return (
     <section
       id="services"
@@ -53,7 +63,7 @@ function Services() {
           </span>
         </h2>
         <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          Practical sessions, clear outcomes, and lifetime support. Choose a course and start building portfolio‑ready work.
+         ProSkill – Best Skill Academy in Kerala. Learn resin art with hands-on training and lifetime support.
         </p>
 
         {/* Stats */}
@@ -64,7 +74,7 @@ function Services() {
           </div>
           <div className="inline-flex items-center gap-3 px-4 py-2 rounded-lg bg-gray-50 border border-gray-200">
             <Users className="w-6 h-6 text-gray-800" aria-hidden />
-            <span className="text-black font-semibold">1000+ Learners</span>
+            <span className="text-black font-semibold">10000+ Learners</span>
           </div>
           <div className="inline-flex items-center gap-3 px-4 py-2 rounded-lg bg-gray-50 border border-gray-200">
             <Star className="w-6 h-6 text-gray-800" aria-hidden />
@@ -91,20 +101,43 @@ function Services() {
                 <h3 className="text-2xl font-bold tracking-tight text-black transition-colors">
                   {course.title}
                 </h3>
-                <p className="mt-3 text-gray-600 leading-relaxed">{course.description}</p>
+                {expandedCourses.includes(course.id) && (
+                  <p className="mt-3 text-gray-600 leading-relaxed">{course.description}</p>
+                )}
               </div>
             </div>
 
-            <ul className="mt-8 space-y-4">
-              {course.features.map((f, i) => (
-                <li key={i} className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-black">
-                    <CheckCircle className="h-4 w-4 text-white" aria-hidden />
-                  </span>
-                  <span className="text-gray-700 font-medium">{f}</span>
-                </li>
-              ))}
-            </ul>
+            {expandedCourses.includes(course.id) && (
+              <>
+                <ul className="mt-8 space-y-4">
+                  {course.features.map((f, i) => (
+                    <li key={i} className="flex items-start gap-4">
+                      <span className="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-black">
+                        <CheckCircle className="h-4 w-4 text-white" aria-hidden />
+                      </span>
+                      <span className="text-gray-700 font-medium">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+
+            <button
+              onClick={() => toggleCourse(course.id)}
+              className="mt-4 inline-flex items-center gap-2 text-black font-semibold hover:text-gray-600 transition-colors duration-200"
+            >
+              {expandedCourses.includes(course.id) ? (
+                <>
+                  <span>See Less</span>
+                  <ChevronUp className="w-4 h-4" />
+                </>
+              ) : (
+                <>
+                  <span>See More</span>
+                  <ChevronDown className="w-4 h-4" />
+                </>
+              )}
+            </button>
 
             <div className="mt-10">
               <button
